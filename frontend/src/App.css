@@ -1,0 +1,28 @@
+.App {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}
+
+h2 {
+    margin-top: 20px;
+}

@@ -16,8 +16,8 @@ if not os.path.exists(UPLOAD_FOLDER):
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Loading the trained models + vectorizer using joblib
-model = joblib.load('resume_parser_model.pkl')  
-vectorizer = joblib.load('vectorizer.pkl')  
+model = joblib.load('model/resume_parser_model.pkl')  
+vectorizer = joblib.load('model/vectorizer.pkl')  
 
 # Preprocessing text
 def preprocess_text(resume_text):
@@ -63,4 +63,4 @@ def upload_resume():
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=3300)
